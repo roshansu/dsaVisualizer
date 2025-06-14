@@ -29,7 +29,7 @@ function clear(){
 function stopAnimation() {
   dispatch(stopSorting());
   timeouts.forEach(clearTimeout);
-  timeouts = [];
+  // timeouts = [];
 }
 
 function handleClick(){
