@@ -1,0 +1,51 @@
+.parent{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    gap: 7px;
+    width: 100%;
+    height: 80vh;
+    position: relative;
+}
+
+.box{
+    transition: background-color 0.2s linear;
+    width: 50px;
+    background-color: #d4a373;
+    font-family: 'poppins', serif;
+    font-weight: 600;
+    display: flex;
+    align-items: end;
+    color: #231942;
+    font-size: 15px;
+    justify-content: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+@keyframes fadeIn {
+    from{
+        transform: translateX(-50px);
+    }
+  }
+  
+.left{
+    animation: fadeIn 0.5s ease-in-out 1;
+}
+
+@keyframes fadeout {
+    from{
+        transform: translateX(50px);
+    }
+  }
+  
+.right{
+    animation: fadeout 0.5s ease-in-out 1;
+}
+
+.parent h1{
+    position: absolute;
+    top: 0;
+    font-family: 'poppins', serif;
+    color: #03045e;
+}
